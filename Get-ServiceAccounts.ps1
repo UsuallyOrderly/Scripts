@@ -1,4 +1,5 @@
 ﻿#testing
+#testing again?
 #Grab service accounts on all servers
 $servers = Get-ADComputer -Filter * -Property Name,OperatingSystem | Where-Object {$_.OperatingSystem -like "*server*"} | select name -ExpandProperty name
 
